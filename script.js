@@ -157,7 +157,6 @@ const featuredCards = {
       title: 'Retos de Fútbol y Portería',
       desc: 'Pruebas de puntería, penaltis y desafíos dinámicos en el campo con alta interacción.',
       value: 'Ideal para integración orgánica de productos deportivos (calzado, guantes, balones).',
-      perf: 'Rendimiento pendiente de verificar',
       img: img.featOrange
     },
     {
@@ -165,7 +164,6 @@ const featuredCards = {
       title: 'Vlogs de la Vida en USA',
       desc: 'El día a día en un campus americano, rutinas de entrenamiento, viajes y vida estudiantil.',
       value: 'Territorio de marca perfecto para tecnología, viajes, ropa casual y plataformas educativas.',
-      perf: 'Rendimiento pendiente de verificar',
       img: img.featRedControl
     },
     {
@@ -173,7 +171,6 @@ const featuredCards = {
       title: 'Humor y Comedia Deportiva',
       desc: 'Tendencias, humor cotidiano y situaciones típicas de vestuario o de la vida de estudiante.',
       value: 'Altas tasas de compartido y viralidad rápida. Ideal para activaciones de lifestyle.',
-      perf: 'Rendimiento pendiente de verificar',
       img: img.featBlueCeleb
     },
     {
@@ -181,7 +178,6 @@ const featuredCards = {
       title: 'Storytelling y Tutoriales',
       desc: 'Vídeos explicativos sobre técnica de porteros, consejos de estudio en el extranjero y rutinas.',
       value: 'Genera autoridad y confianza. Ideal para campañas de UGC (User Generated Content) y reviews.',
-      perf: 'Rendimiento pendiente de verificar',
       img: img.featBroadcastCrew
     }
   ],
@@ -191,7 +187,6 @@ const featuredCards = {
       title: 'Football & Goalkeeper Challenges',
       desc: 'Accuracy tests, penalty shootouts, and dynamic on-pitch challenges with high engagement.',
       value: 'Ideal for organic product integration (boots, goalkeeper gloves, footballs).',
-      perf: 'Performance data pending',
       img: img.featOrange
     },
     {
@@ -199,7 +194,6 @@ const featuredCards = {
       title: 'USA Campus Life Vlogs',
       desc: 'Daily routine at an American campus, training schedules, travel vlogs, and student lifestyle.',
       value: 'Perfect brand territory for technology, travel, casual streetwear, and education platforms.',
-      perf: 'Performance data pending',
       img: img.featRedControl
     },
     {
@@ -207,7 +201,6 @@ const featuredCards = {
       title: 'Sports Humor & Relatability',
       desc: 'Trending topics, student-athlete memes, locker room situations, and daily athlete humor.',
       value: 'High share rates and quick viral potential. Excellent for lifestyle activations.',
-      perf: 'Performance data pending',
       img: img.featBlueCeleb
     },
     {
@@ -215,7 +208,6 @@ const featuredCards = {
       title: 'Storytelling & Educational Tutorials',
       desc: 'Goalkeeper training techniques, study abroad guides, tips, and personal growth talks.',
       value: 'Establishes authority and trust. Perfect for UGC (User Generated Content) and reviews.',
-      perf: 'Performance data pending',
       img: img.featBroadcastCrew
     }
   ]
@@ -276,9 +268,6 @@ function mountCards(lang) {
           <div class="mt-4 pt-4 border-t border-white/5 text-[11px] leading-relaxed text-steel">
             <span class="font-semibold text-chalk/80 block mb-1">${lang === 'es' ? 'Valor de Marca:' : 'Brand Fit:'}</span>
             ${item.value}
-          </div>
-          <div class="mt-auto pt-4 flex items-center justify-between">
-            <span class="text-[10px] uppercase font-bold tracking-widest text-volt bg-volt/10 px-2 py-0.5 rounded">${item.perf}</span>
           </div>
         </div>
       </article>
