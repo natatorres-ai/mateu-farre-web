@@ -1,256 +1,356 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mateu Farré | MF1 Media Kit</title>
-  <meta name="description" content="Professional bilingual media kit for Mateu Farré, football, college lifestyle and sports content creator." />
+  <meta name="description" content="Professional bilingual media kit for Mateu Farré, sports content creator, goalkeeper and student in the United States." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS & Config -->
   <script src="tailwind.config.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="noise font-body antialiased selection:bg-pitch selection:text-ink">
+<body class="noise antialiased selection:bg-pitch selection:text-ink">
   <div class="field-lines fixed inset-0 -z-10"></div>
-  <div class="fixed -left-24 top-24 h-72 w-72 rounded-full bg-volt/25 blur-3xl -z-10"></div>
-  <div class="fixed -right-24 bottom-24 h-80 w-80 rounded-full bg-pitch/20 blur-3xl -z-10"></div>
 
-  <header class="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-ink/75 backdrop-blur-xl">
+  <!-- Header Navigation -->
+  <header class="fixed inset-x-0 top-0 z-40 bg-[#050505]/80 backdrop-blur-md border-b border-white/5">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-      <a href="#top" class="flex items-center gap-3" aria-label="Mateu Farré home">
-        <span class="flex h-11 w-16 items-center justify-center rounded-xl bg-chalk p-1.5 shadow-glow">
+      <a href="#top" class="flex items-center gap-3.5" aria-label="Mateu Farré home">
+        <span class="flex h-10 w-14 items-center justify-center rounded-xl bg-chalk p-1.5 shadow-glow">
           <img src="assets/logo mateu.png" alt="MF1 logo" class="h-full w-full object-contain logo-img" />
         </span>
-        <span class="hidden text-xs font-black uppercase tracking-[.24em] text-chalk/80 sm:block">Mateu Farré</span>
+        <span class="hidden text-xs font-black uppercase tracking-[.25em] text-chalk sm:block">Mateu Farré</span>
       </a>
-      <div class="hidden items-center gap-6 text-xs font-bold uppercase tracking-[.18em] text-chalk/70 lg:flex">
-        <a class="hover:text-pitch" href="#impact" data-i18n="nav_impact">Impacto</a>
-        <a class="hover:text-pitch" href="#why" data-i18n="nav_why">Por qué Mateu</a>
-        <a class="hover:text-pitch" href="#proposal" data-i18n="nav_brands">Marcas</a>
-        <a class="hover:text-pitch" href="#contact" data-i18n="nav_contact">Contacto</a>
+      
+      <!-- Nav Links -->
+      <div class="hidden items-center gap-8 text-[11px] font-bold uppercase tracking-[.2em] text-steel lg:flex">
+        <a class="transition-colors hover:text-pitch" href="#metrics" data-i18n="nav_impact">Métricas</a>
+        <a class="transition-colors hover:text-pitch" href="#about" data-i18n="nav_why">Por qué Mateu</a>
+        <a class="transition-colors hover:text-pitch" href="#featured" data-i18n="nav_featured">Formatos</a>
+        <a class="transition-colors hover:text-pitch" href="#collab" data-i18n="nav_brands">Oportunidades</a>
+        <a class="transition-colors hover:text-pitch" href="#contact" data-i18n="nav_contact">Contacto</a>
       </div>
-      <div class="flex items-center gap-2">
-        <button class="lang-btn rounded-full border border-white/15 px-3 py-2 text-xs font-black text-pitch" data-lang="es">ES</button>
-        <button class="lang-btn rounded-full border border-white/15 px-3 py-2 text-xs font-black text-chalk/60" data-lang="en">EN</button>
+      
+      <!-- Language Switch -->
+      <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1">
+        <button class="lang-btn rounded-full px-3 py-1 text-[10px] font-black tracking-wider transition-all duration-200" data-lang="es">ES</button>
+        <button class="lang-btn rounded-full px-3 py-1 text-[10px] font-black tracking-wider transition-all duration-200" data-lang="en">EN</button>
       </div>
     </nav>
   </header>
 
+  <!-- Main Content App Container -->
   <main id="top">
-    <section class="relative mx-auto grid min-h-screen max-w-7xl items-center gap-10 px-4 pb-20 pt-28 sm:px-6 lg:grid-cols-[1.08fr_.92fr] lg:px-8">
+    
+    <!-- 1. Hero Section -->
+    <section class="relative mx-auto grid min-h-[92vh] max-w-7xl items-center gap-12 px-4 pb-16 pt-32 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
       <div class="reveal">
-        <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-black uppercase tracking-[.18em] text-pitch">
-          <span class="h-2 w-2 rounded-full bg-pitch shadow-pitch"></span>
-          <span data-i18n="hero_tag">Media Kit Profesional</span>
+        <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-pitch/25 bg-pitch/5 px-4.5 py-1.5 text-[10px] font-black uppercase tracking-[.2em] text-pitch">
+          <span class="h-2 w-2 rounded-full bg-pitch shadow-pitch animate-pulse"></span>
+          <span data-i18n="hero_tag">Media Kit Oficial</span>
         </div>
         <h1 class="hero-name text-chalk">
           <span>Mateu</span><span class="hero-last">Farré</span>
         </h1>
         <div class="mt-6 max-w-3xl border-l-4 border-pitch pl-5">
-          <p class="text-3xl font-black uppercase tracking-tight text-chalk sm:text-5xl" data-i18n="hero_claim">Football. Content. Ambition.</p>
-          <p class="mt-4 text-base leading-8 text-chalk/74 sm:text-xl" data-i18n="hero_sub">Un joven creador que mezcla fútbol, vida universitaria en Estados Unidos, humor, retos, disciplina y lifestyle para conectar con una audiencia joven e internacional.</p>
+          <p class="text-2xl font-black uppercase tracking-tight text-white sm:text-4xl" data-i18n="hero_claim">Fútbol, contenido y ambición.</p>
+          <p class="mt-4 text-sm leading-relaxed text-steel sm:text-base" data-i18n="hero_sub">Creador de contenido deportivo que mezcla fútbol, vida universitaria en Estados Unidos, humor y disciplina para conectar con una comunidad joven e internacional.</p>
         </div>
-        <div class="mt-9 flex flex-wrap gap-3">
-          <a href="#impact" class="slant bg-pitch px-7 py-4 text-sm font-black uppercase tracking-[.15em] text-ink transition hover:bg-white" data-i18n="cta_content">Ver contenidos</a>
-          <a href="#proposal" class="slant border border-white/20 px-7 py-4 text-sm font-black uppercase tracking-[.15em] text-chalk transition hover:border-pitch hover:text-pitch" data-i18n="cta_collab">Colaborar</a>
-          <a href="#contact" class="slant border border-white/20 px-7 py-4 text-sm font-black uppercase tracking-[.15em] text-chalk transition hover:border-volt hover:text-volt" data-i18n="cta_contact">Contactar</a>
+        
+        <!-- Hero Metrics -->
+        <div class="mt-8 grid max-w-lg grid-cols-3 gap-3">
+          <div class="rounded-2xl border border-white/5 bg-[#0c0c0c] p-4 text-center">
+            <p class="text-2xl font-black text-pitch sm:text-3xl">155K</p>
+            <p class="text-[9px] font-bold uppercase tracking-widest text-steel mt-0.5">TikTok</p>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-[#0c0c0c] p-4 text-center">
+            <p class="text-2xl font-black text-pitch sm:text-3xl">23.9K</p>
+            <p class="text-[9px] font-bold uppercase tracking-widest text-steel mt-0.5">Instagram</p>
+          </div>
+          <div class="rounded-2xl border border-white/5 bg-[#0c0c0c] p-4 text-center">
+            <p class="text-2xl font-black text-pitch sm:text-3xl">7.11K</p>
+            <p class="text-[9px] font-bold uppercase tracking-widest text-steel mt-0.5">YouTube</p>
+          </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="mt-9 flex flex-wrap gap-4">
+          <a href="#contact" class="slant bg-pitch px-8 py-4.5 text-xs font-black uppercase tracking-[.2em] text-ink transition duration-300 hover:bg-chalk" data-i18n="cta_contact">Contactar</a>
+          <a href="#collab" class="slant border border-white/10 bg-white/5 px-8 py-4.5 text-xs font-black uppercase tracking-[.2em] text-chalk transition duration-300 hover:border-pitch hover:text-pitch" data-i18n="cta_collab">Oportunidades</a>
         </div>
       </div>
 
-      <div class="reveal relative">
-        <div class="absolute -inset-4 rotate-2 rounded-[2rem] border border-pitch/30"></div>
-        <div class="glass relative overflow-hidden rounded-[2rem] p-5 shadow-glow">
-          <div class="media-card paper flex aspect-[4/5] flex-col justify-between overflow-hidden rounded-[1.5rem] p-6 image-ring">
-            <img src="assets/ChatGPT Image 12 jun 2026, 17_52_21.png" alt="Mateu Farré on a football field at night with the scoreboard behind him" class="absolute inset-0 z-0 h-full w-full object-cover" loading="eager" />
-            <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/10 via-black/25 to-black/85"></div>
+      <!-- Hero Visual Frame -->
+      <div class="reveal relative flex justify-center lg:justify-end">
+        <div class="absolute -inset-2 rotate-2 rounded-[2rem] border border-pitch/20 max-w-[420px] w-full aspect-[4/5]"></div>
+        <div class="glass relative overflow-hidden rounded-[2rem] p-4 shadow-glow max-w-[420px] w-full aspect-[4/5]">
+          <div class="media-card flex h-full flex-col justify-between overflow-hidden rounded-[1.5rem] p-6 image-ring">
+            <img src="assets/ChatGPT Image 12 jun 2026, 17_54_03.png" alt="Mateu Farré catching a football mid-air" class="absolute inset-0 z-0 h-full w-full object-cover" loading="eager" />
+            <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/5 via-black/20 to-black/90"></div>
             <div class="relative z-10 flex items-start justify-between">
-              <img src="assets/logo mateu.png" alt="MF1 logo" class="relative z-10 h-16 w-28 rounded-2xl bg-chalk/90 object-contain p-2 logo-img" />
-              <span class="rounded-full bg-ink px-4 py-2 text-xs font-black uppercase tracking-[.16em] text-pitch">MF1</span>
+              <img src="assets/logo mateu.png" alt="MF1 logo" class="h-10 w-16 rounded-xl bg-chalk/90 object-contain p-1.5 shadow-md" />
+              <span class="rounded-full bg-[#050505] px-3.5 py-1.5 text-[9px] font-black uppercase tracking-[.2em] text-pitch border border-white/5">MF1</span>
             </div>
-            <div class="relative z-10">
-              <div class="mb-5 rounded-3xl border border-white/15 bg-black/35 p-5 backdrop-blur-sm">
-                <p class="text-xs font-black uppercase tracking-[.22em] text-pitch" data-i18n="photo_placeholder">Imagen destacada</p>
-                <p class="mt-16 text-4xl font-black uppercase leading-none tracking-[-.04em] text-chalk" data-i18n="hero_visual">Portero. Creador. Estudiante.</p>
-              </div>
-              <div class="grid grid-cols-3 gap-2 text-center">
-                <div class="rounded-2xl bg-ink p-3 text-chalk"><p class="text-2xl font-black">155K</p><p class="text-[10px] uppercase tracking-widest text-chalk/55">TikTok</p></div>
-                <div class="rounded-2xl bg-ink p-3 text-chalk"><p class="text-2xl font-black">23.9K</p><p class="text-[10px] uppercase tracking-widest text-chalk/55">Instagram</p></div>
-                <div class="rounded-2xl bg-ink p-3 text-chalk"><p class="text-2xl font-black">7.11K</p><p class="text-[10px] uppercase tracking-widest text-chalk/55">YouTube</p></div>
-              </div>
+            <div class="relative z-10 rounded-2xl border border-white/5 bg-black/40 p-5 backdrop-blur-md">
+              <p class="text-[9px] font-black uppercase tracking-[.25em] text-pitch" data-i18n="hero_tag">Media Kit Oficial</p>
+              <p class="mt-2 text-2xl font-bold uppercase leading-none tracking-tight text-white" data-i18n="hero_visual">De la portería a la pantalla.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="overflow-hidden border-y border-white/10 bg-ink py-4">
-      <div class="ticker flex w-[200%] gap-8 whitespace-nowrap text-sm font-black uppercase tracking-[.22em] text-chalk/55">
-        <span>From the pitch to the screen</span><span class="text-pitch">Si vas, full gas</span><span>Football with a lifestyle edge</span><span class="text-volt">USA college life</span><span>Humor + discipline</span><span>From the pitch to the screen</span><span class="text-pitch">Si vas, full gas</span><span>Football with a lifestyle edge</span><span class="text-volt">USA college life</span><span>Humor + discipline</span>
+    <!-- Continuous Running Ticker Banner -->
+    <section class="overflow-hidden border-y border-white/5 bg-[#080808] py-4.5">
+      <div class="ticker flex w-[200%] gap-10 whitespace-nowrap text-[10px] font-black uppercase tracking-[.25em] text-steel">
+        <span>Football creator</span><span class="text-pitch">USA college life</span><span>Goalkeeper energy</span><span class="text-volt">Young community</span><span>Brand-ready content</span><span>Football creator</span><span class="text-pitch">USA college life</span><span>Goalkeeper energy</span><span class="text-volt">Young community</span><span>Brand-ready content</span>
       </div>
     </section>
 
+    <!-- 2. Metrics Snapshot Section -->
     <section id="metrics" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="reveal mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-        <div><p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="metrics_kicker">Comunidad acumulada</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl" data-i18n="metrics_title">Números que abren puertas.</h2></div>
-        <p class="max-w-xl text-chalk/65" data-i18n="metrics_note">Las métricas actuales conocidas se muestran como aproximadas. Los datos de rendimiento profundo quedan preparados para actualizarse con capturas o analíticas verificadas.</p>
-      </div>
-      <div class="grid gap-4 md:grid-cols-3">
-        <article class="reveal magnetic glass rounded-[2rem] p-7"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch">TikTok</p><p class="mt-5 font-display text-7xl tracking-[-.06em]">155K</p><p class="text-chalk/60" data-i18n="followers">seguidores aprox.</p></article>
-        <article class="reveal magnetic glass rounded-[2rem] p-7"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch">Instagram</p><p class="mt-5 font-display text-7xl tracking-[-.06em]">23.9K</p><p class="text-chalk/60" data-i18n="followers">seguidores aprox.</p></article>
-        <article class="reveal magnetic glass rounded-[2rem] p-7"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch">YouTube</p><p class="mt-5 font-display text-7xl tracking-[-.06em]">7.11K</p><p class="text-chalk/60" data-i18n="subs">suscriptores aprox.</p></article>
-      </div>
-      <div class="mt-4 grid gap-4 md:grid-cols-5">
-        <div class="reveal rounded-3xl border border-dashed border-white/20 bg-white/5 p-5"><p class="text-xs uppercase tracking-widest text-chalk/45">Total views</p><p class="mt-2 font-black text-pitch">To be updated</p></div>
-        <div class="reveal rounded-3xl border border-dashed border-white/20 bg-white/5 p-5"><p class="text-xs uppercase tracking-widest text-chalk/45">Best video</p><p class="mt-2 font-black text-pitch">To be updated</p></div>
-        <div class="reveal rounded-3xl border border-dashed border-white/20 bg-white/5 p-5"><p class="text-xs uppercase tracking-widest text-chalk/45">Top countries</p><p class="mt-2 font-black text-pitch">To be updated</p></div>
-        <div class="reveal rounded-3xl border border-dashed border-white/20 bg-white/5 p-5"><p class="text-xs uppercase tracking-widest text-chalk/45">Audience age</p><p class="mt-2 font-black text-pitch">To be updated</p></div>
-        <div class="reveal rounded-3xl border border-dashed border-white/20 bg-white/5 p-5"><p class="text-xs uppercase tracking-widest text-chalk/45">Engagement</p><p class="mt-2 font-black text-pitch">To be updated</p></div>
-      </div>
-    </section>
-
-    <section id="impact" class="bg-chalk text-ink">
-      <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div class="reveal mb-10 max-w-4xl"><p class="text-sm font-black uppercase tracking-[.22em] text-volt" data-i18n="impact_kicker">Best performing content</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] sm:text-7xl" data-i18n="impact_title">El potencial se demuestra en las mejores piezas.</h2><p class="mt-5 text-lg leading-8 text-ink/65" data-i18n="impact_intro">Esta sección está pensada para vender el histórico de mayor impacto: vídeos virales, formatos repetibles y momentos que prueban capacidad de atención. No se centra en los últimos 7, 28 o 30 días.</p></div>
-        <div class="grid gap-5 lg:grid-cols-3">
-          <article class="reveal magnetic overflow-hidden rounded-[2rem] bg-ink text-chalk"><figure class="media-card h-64"><img src="assets/ChatGPT Image 12 jun 2026, 17_54_03.png" alt="Mateu Farré jumping to catch a ball as a goalkeeper" loading="lazy" /><figcaption class="caption"><span class="rounded-full bg-pitch px-3 py-1 text-xs font-black uppercase tracking-widest text-ink">TikTok</span></figcaption></figure><div class="p-6"><h3 class="text-3xl font-black uppercase" data-i18n="content_card_1">Momento viral / reto de fútbol</h3><dl class="mt-6 grid grid-cols-2 gap-3 text-sm"><div><dt class="text-chalk/45">Views</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Likes</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Comments</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Link</dt><dd class="font-black text-pitch">Pending</dd></div></dl><p class="mt-6 text-chalk/70" data-i18n="why_worked_1">Por qué funcionó: formato rápido, energía joven, fútbol fácil de compartir y una situación reconocible para fans del deporte.</p><p class="mt-4 border-t border-white/10 pt-4 text-sm text-chalk/55" data-i18n="brand_proof_1">Para una marca demuestra atención en short-form, naturalidad y capacidad de integrar producto sin romper el tono.</p></div></article>
-          <article class="reveal magnetic overflow-hidden rounded-[2rem] bg-white text-ink shadow-xl"><figure class="media-card h-64"><img src="assets/ChatGPT Image 12 jun 2026, 18_11_07.png" alt="Mateu Farré wearing broadcast headphones in a creator and media environment" loading="lazy" /><figcaption class="caption"><span class="rounded-full bg-volt px-3 py-1 text-xs font-black uppercase tracking-widest text-white">Instagram</span></figcaption></figure><div class="p-6"><h3 class="text-3xl font-black uppercase" data-i18n="content_card_2">Vida universitaria en USA</h3><dl class="mt-6 grid grid-cols-2 gap-3 text-sm"><div><dt class="text-ink/45">Views</dt><dd class="font-black text-volt">To be updated</dd></div><div><dt class="text-ink/45">Likes</dt><dd class="font-black text-volt">To be updated</dd></div><div><dt class="text-ink/45">Comments</dt><dd class="font-black text-volt">To be updated</dd></div><div><dt class="text-ink/45">Link</dt><dd class="font-black text-volt">Pending</dd></div></dl><p class="mt-6 text-ink/70" data-i18n="why_worked_2">Por qué funcionó: combina aspiración, deporte y experiencia personal en Estados Unidos, un ángulo diferencial para público joven.</p><p class="mt-4 border-t border-ink/10 pt-4 text-sm text-ink/55" data-i18n="brand_proof_2">Para una marca abre territorios de educación, lifestyle, deporte, viajes, tecnología y experiencias internacionales.</p></div></article>
-          <article class="reveal magnetic overflow-hidden rounded-[2rem] bg-ink text-chalk"><figure class="media-card h-64"><img src="assets/ChatGPT Image 12 jun 2026, 17_46_56.png" alt="Mateu Farré playing football in a red kit" loading="lazy" /><figcaption class="caption"><span class="rounded-full bg-chalk px-3 py-1 text-xs font-black uppercase tracking-widest text-ink">YouTube</span></figcaption></figure><div class="p-6"><h3 class="text-3xl font-black uppercase" data-i18n="content_card_3">Formato largo / historia personal</h3><dl class="mt-6 grid grid-cols-2 gap-3 text-sm"><div><dt class="text-chalk/45">Views</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Likes</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Comments</dt><dd class="font-black text-pitch">To be updated</dd></div><div><dt class="text-chalk/45">Link</dt><dd class="font-black text-pitch">Pending</dd></div></dl><p class="mt-6 text-chalk/70" data-i18n="why_worked_3">Por qué funcionó: permite construir confianza, mostrar proceso, entrenamientos, decisiones y una narrativa más profunda.</p><p class="mt-4 border-t border-white/10 pt-4 text-sm text-chalk/55" data-i18n="brand_proof_3">Para una marca demuestra storytelling, retención potencial y espacio para integraciones más completas.</p></div></article>
+      <div class="reveal mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+        <div>
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="metrics_kicker">Metrics Snapshot</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="metrics_title">Comunidad conectada</h2>
         </div>
+        <p class="max-w-md text-xs leading-relaxed text-steel" data-i18n="metrics_note">Métricas públicas certificadas.</p>
+      </div>
+      
+      <!-- Metrics Grid -->
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">TikTok</span>
+              <svg class="h-5 w-5 text-steel/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.44-4.13-1.24-.76-.5-1.42-1.15-1.92-1.92v6.62c.03 2.1-.6 4.31-2.07 5.86-1.57 1.71-4.04 2.65-6.35 2.27-2.31-.34-4.43-1.93-5.26-4.14-.98-2.5-.27-5.59 1.72-7.37 1.68-1.54 4.17-2.12 6.36-1.5v4.03c-1.12-.34-2.39-.14-3.32.55-.99.71-1.39 2.05-1.01 3.22.36 1.18 1.57 1.99 2.81 1.95 1.48-.02 2.69-1.24 2.71-2.72.03-3.08.01-6.16.02-9.24.01-.15.01-.3-.02-.45z"/></svg>
+            </div>
+            <p class="mt-6 font-display text-6xl font-black text-white leading-none">155K</p>
+          </div>
+          <p class="mt-4 text-xs font-medium text-steel" data-i18n="followers">seguidores</p>
+        </article>
+        
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">Instagram</span>
+              <svg class="h-5 w-5 text-steel/60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+            </div>
+            <p class="mt-6 font-display text-6xl font-black text-white leading-none">23.9K</p>
+          </div>
+          <p class="mt-4 text-xs font-medium text-steel" data-i18n="followers">seguidores</p>
+        </article>
+        
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">YouTube</span>
+              <svg class="h-5 w-5 text-steel/60" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.002 3.002 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <p class="mt-6 font-display text-6xl font-black text-white leading-none">7.11K</p>
+          </div>
+          <p class="mt-4 text-xs font-medium text-steel" data-i18n="subs">suscriptores</p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="mx-auto grid max-w-7xl gap-8 px-4 py-20 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
-      <div class="reveal">
-        <p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="about_kicker">Quién es Mateu</p>
-        <h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl">MF1</h2>
-        <figure class="media-card mt-8 aspect-[4/5] rounded-[2rem] image-ring">
-          <img src="assets/ChatGPT Image 12 jun 2026, 17_56_17.png" alt="Mateu Farré during a professional media day photo session" loading="lazy" />
+    <!-- 3. Who is Mateu Section -->
+    <section id="about" class="border-y border-white/5 bg-[#080808]/40">
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 py-24 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        
+        <!-- Team environment image -->
+        <figure class="reveal media-card min-h-[26rem] rounded-[2rem] image-ring overflow-hidden relative">
+          <img src="assets/ChatGPT Image 12 jun 2026, 17_50_13.png" alt="Mateu Farré with his teammates on the field" loading="lazy" class="w-full h-full object-cover" />
           <figcaption class="caption">
-            <span class="rounded-full bg-chalk px-3 py-1 text-xs font-black uppercase tracking-widest text-ink">Media day</span>
+            <span class="rounded-full bg-pitch px-3.5 py-1.5 text-[9px] font-black uppercase tracking-widest text-ink border border-pitch/30">Team Mode</span>
           </figcaption>
         </figure>
-      </div>
-      <div class="reveal glass rounded-[2rem] p-8 sm:p-10"><p class="text-2xl font-black leading-tight text-chalk sm:text-4xl" data-i18n="about_text">Mateu Farré es un joven creador de contenido que une fútbol, humor, vida universitaria en Estados Unidos y mentalidad de crecimiento. Su contenido conecta con jóvenes que aman el deporte, sueñan con vivir nuevas experiencias y buscan referentes cercanos, naturales y auténticos.</p><p class="mt-6 text-lg leading-8 text-chalk/67" data-i18n="about_text_2">No se presenta solo como deportista: es un estudiante, portero y creador con energía de futuro. De la portería a la pantalla, transforma entrenamientos, retos, viajes y momentos cotidianos en contenido que entretiene, conecta y motiva.</p></div>
-    </section>
-
-    <section id="why" class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="reveal mb-10"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch">Why Mateu</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl" data-i18n="why_title">Un perfil joven con puente internacional.</h2></div>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4" id="whyGrid"></div>
-    </section>
-
-    <section id="pillars" class="bg-ink/80 py-20">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="reveal mb-10"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="pillars_kicker">Content pillars</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl" data-i18n="pillars_title">Formatos que una marca puede activar.</h2></div>
-        <div class="grid gap-4 md:grid-cols-3" id="pillarsGrid"></div>
-      </div>
-    </section>
-
-    <section id="audience" class="bg-chalk text-ink">
-      <div class="mx-auto grid max-w-7xl gap-8 px-4 py-20 sm:px-6 lg:grid-cols-[1.1fr_.9fr] lg:px-8">
-        <div class="reveal"><p class="text-sm font-black uppercase tracking-[.22em] text-volt" data-i18n="audience_kicker">Audiencia</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] sm:text-7xl" data-i18n="audience_title">Gen Z, fútbol y aspiración real.</h2><p class="mt-6 text-lg leading-8 text-ink/68" data-i18n="audience_text">Una comunidad joven interesada en fútbol, retos, humor, lifestyle y la posibilidad de estudiar o jugar en Estados Unidos. Mateu conecta con seguidores de España, Latinoamérica y público internacional desde un tono directo, natural y aspiracional.</p></div>
-        <div class="reveal grid gap-3">
-          <div class="rounded-3xl bg-white p-5 shadow-sm"><span class="text-xs uppercase tracking-widest text-ink/40">Top countries</span><p class="font-black text-volt">Dato pendiente de actualizar</p></div>
-          <div class="rounded-3xl bg-white p-5 shadow-sm"><span class="text-xs uppercase tracking-widest text-ink/40">Main age</span><p class="font-black text-volt">Dato pendiente de actualizar</p></div>
-          <div class="rounded-3xl bg-white p-5 shadow-sm"><span class="text-xs uppercase tracking-widest text-ink/40">Gender split</span><p class="font-black text-volt">Dato pendiente de actualizar</p></div>
-          <div class="rounded-3xl bg-white p-5 shadow-sm"><span class="text-xs uppercase tracking-widest text-ink/40">Reach / engagement</span><p class="font-black text-volt">Dato pendiente de actualizar</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="achievements" class="relative overflow-hidden bg-ink py-20">
-      <div class="absolute inset-0 opacity-35">
-        <img src="assets/ChatGPT Image 12 jun 2026, 18_01_13.png" alt="Team celebration used as a subtle competitive background" class="h-full w-full object-cover" loading="lazy" />
-        <div class="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/40"></div>
-      </div>
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="reveal mb-10 max-w-3xl">
-          <p class="text-sm font-black uppercase tracking-[.22em] text-pitch">Competition moments</p>
-          <h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl">Built through competition.</h2>
-          <p class="mt-5 text-lg leading-8 text-chalk/68">Experiencias que refuerzan su identidad deportiva: equipo, disciplina, presión, celebración y momentos que ayudan a construir una historia creíble alrededor del fútbol. Las imágenes hablan de contexto competitivo sin añadir datos no verificados.</p>
-        </div>
-        <div class="grid gap-4 md:grid-cols-3">
-          <figure class="reveal media-card min-h-[28rem] rounded-[2rem] image-ring md:col-span-2">
-            <img src="assets/ChatGPT Image 12 jun 2026, 18_04_45.png" alt="Close team celebration with a visible champion sign" loading="lazy" />
-            <figcaption class="caption"><span class="rounded-full bg-pitch px-3 py-1 text-xs font-black uppercase tracking-widest text-ink">Team momentum</span><p class="mt-3 max-w-lg text-3xl font-black uppercase leading-none text-chalk">A story shaped by football, discipline and team moments.</p></figcaption>
-          </figure>
-          <div class="grid gap-4">
-            <figure class="reveal media-card min-h-[13.5rem] rounded-[2rem] image-ring">
-              <img src="assets/ChatGPT Image 12 jun 2026, 18_08_46.png" alt="Team group celebrating with a mascot and championship sign" loading="lazy" />
-              <figcaption class="caption"><p class="text-xl font-black uppercase text-chalk">Community</p></figcaption>
-            </figure>
-            <figure class="reveal media-card min-h-[13.5rem] rounded-[2rem] image-ring">
-              <img src="assets/ChatGPT Image 12 jun 2026, 17_59_44.png" alt="Football team group photo on the field" loading="lazy" />
-              <figcaption class="caption"><p class="text-xl font-black uppercase text-chalk">Team context</p></figcaption>
-            </figure>
+        
+        <!-- About Texts -->
+        <div class="reveal flex flex-col justify-center">
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="about_kicker">Who is Mateu</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="about_title">Deportista de élite y creador de contenido.</h2>
+          <div class="mt-6 space-y-4 text-sm leading-relaxed text-steel">
+            <p data-i18n="about_text_1">Mateu Farré no es solo un portero compitiendo en el exigente sistema universitario de Estados Unidos; es una voz fresca e influyente que narra el deporte desde adentro. Su día a día combina la rigurosa disciplina del entrenamiento de alto rendimiento con la producción creativa de formatos dinámicos, retos y humor.</p>
+            <p data-i18n="about_text_2">Con una base de seguidores que supera los 180,000 en múltiples plataformas, conecta de manera orgánica con jóvenes de España, Latinoamérica e internacionalmente. Su propuesta de valor para las marcas radica en esta autenticidad: una mezcla de alto impacto visual, pasión deportiva y estilo de vida estudiantil en EE.UU.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="proposal" class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-8">
-      <div class="reveal overflow-hidden rounded-[2.5rem] border border-white/12 bg-white/5 shadow-glow md:grid md:grid-cols-[.9fr_1.1fr]">
-        <figure class="media-card min-h-[24rem]">
-          <img src="assets/ChatGPT Image 12 jun 2026, 17_55_12.png" alt="Mateu Farré celebrating with goalkeeper gloves and strong sporting energy" loading="lazy" />
+    <!-- 4. Why Brands Should Care Section -->
+    <section id="why" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+      <div class="reveal mb-12 max-w-3xl">
+        <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="why_kicker">Why Brands Care</p>
+        <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="why_title">El valor diferencial de MF1</h2>
+      </div>
+      
+      <!-- Dynamically filled by script.js -->
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4" id="whyGrid"></div>
+      
+      <!-- Brand fit category tags -->
+      <div class="reveal mt-12 border-t border-white/5 pt-8">
+        <p class="text-[10px] font-black uppercase tracking-widest text-steel mb-4 text-center md:text-left" data-i18n="target_categories">Categorías de Marcas Objetivo:</p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-2.5">
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_sports_gear">Equipación Deportiva</span>
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_streetwear">Moda Streetwear / Casual</span>
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_tech">Tecnología & Gadgets</span>
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_nutrition">Nutrición Deportiva</span>
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_education">Educación & Universidades</span>
+          <span class="rounded-full bg-white/5 border border-white/10 px-4.5 py-2 text-[10px] font-bold text-chalk uppercase tracking-wider" data-i18n="cat_travel">Viajes & Estilo de Vida</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Featured Content / Formats Section -->
+    <section id="featured" class="border-t border-white/5 bg-[#080808]/40">
+      <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="reveal mb-12 max-w-3xl">
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="featured_kicker">Best Performing Content</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="featured_title">Formatos listos para tu marca</h2>
+          <p class="mt-4 text-sm text-steel leading-relaxed" data-i18n="featured_intro">Formatos seleccionados listos para ser actualizados con datos de rendimiento verificado.</p>
+        </div>
+        
+        <!-- Dynamically filled by script.js -->
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- 6. Collaboration Opportunities Section -->
+    <section id="collab" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+      <div class="reveal overflow-hidden rounded-[2.5rem] border border-white/5 bg-[#0a0a0a] shadow-glow md:grid md:grid-cols-[0.85fr_1.15fr]">
+        
+        <!-- Dive action image -->
+        <figure class="media-card min-h-[30rem] w-full h-full relative">
+          <img src="assets/ChatGPT Image 12 jun 2026, 17_48_21.png" alt="Mateu Farré diving for a football" loading="lazy" class="w-full h-full object-cover" />
         </figure>
-        <div class="p-8 sm:p-12 lg:p-14">
-          <p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="proposal_kicker">Propuesta personalizada</p>
-          <h2 class="mt-4 font-display text-5xl uppercase leading-[.9] tracking-[-.05em] text-chalk sm:text-7xl" data-i18n="proposal_title">Cada colaboración merece su propio plan.</h2>
-          <p class="mt-6 max-w-2xl text-lg leading-8 text-chalk/68" data-i18n="proposal_text">En lugar de paquetes cerrados, Mateu trabaja cada oportunidad según el objetivo de la marca: awareness, contenido, comunidad, activación, evento o relación a largo plazo. Para patrocinios, campañas o propuestas profesionales, contacta con management y se preparará una idea a medida.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="mailto:mateufarremanagement@gmail.com?subject=MF1%20custom%20proposal" class="slant bg-pitch px-7 py-4 text-sm font-black uppercase tracking-[.15em] text-ink transition hover:bg-white" data-i18n="proposal_cta">Contactar para propuesta</a>
-            <a href="#contact" class="slant border border-white/20 px-7 py-4 text-sm font-black uppercase tracking-[.15em] text-chalk transition hover:border-pitch hover:text-pitch" data-i18n="proposal_secondary">Ver contacto</a>
+        
+        <!-- Opportunities cards list -->
+        <div class="p-8 sm:p-12 lg:p-14 flex flex-col justify-between">
+          <div>
+            <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="collab_kicker">Collaboration Opportunities</p>
+            <h2 class="mt-3 font-display section-title text-4xl uppercase leading-none tracking-tight text-white sm:text-5xl" data-i18n="collab_title">Formatos de colaboración</h2>
+            
+            <!-- Packages container dynamically filled by script.js -->
+            <div class="mt-8 grid gap-4 sm:grid-cols-2" id="collabGrid"></div>
+          </div>
+          
+          <div class="mt-10 flex flex-wrap gap-4 pt-6 border-t border-white/5">
+            <a href="mailto:mateufarremanagement@gmail.com?subject=Colaboracion%20MF1%20Media%20Kit" class="slant bg-pitch px-8 py-4 text-xs font-black uppercase tracking-[.2em] text-ink transition duration-300 hover:bg-chalk" data-i18n="send_email">Enviar Email</a>
+            <a href="#contact" class="slant border border-white/10 bg-white/5 px-8 py-4 text-xs font-black uppercase tracking-[.2em] text-chalk transition duration-300 hover:border-pitch hover:text-pitch" data-i18n="view_contact">Ver Contacto</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="bg-chalk text-ink">
-      <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <div class="reveal mb-10"><p class="text-sm font-black uppercase tracking-[.22em] text-volt" data-i18n="gallery_kicker">Visual gallery</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] sm:text-7xl" data-i18n="gallery_title">Preparado para fotos reales.</h2></div>
-        <div class="grid grid-cols-2 gap-3 md:grid-cols-4" id="galleryGrid"></div>
+    <!-- 7. Visual Story Section -->
+    <section id="gallery" class="border-t border-white/5 bg-[#080808]/40">
+      <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="reveal mb-12 max-w-3xl">
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="gallery_kicker">Visual Story</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="gallery_title">Fútbol, USA y Vida de Creador</h2>
+        </div>
+        
+        <!-- Curated Grid filled dynamically by script.js -->
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-4" id="galleryGrid"></div>
       </div>
     </section>
 
-    <section id="proof" class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-      <div class="reveal mb-10"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="proof_kicker">Social proof</p><h2 class="mt-3 font-display text-5xl uppercase tracking-[-.05em] text-chalk sm:text-7xl" data-i18n="proof_title">Espacio para comunidad, comentarios y capturas.</h2></div>
-      <div class="grid gap-4 md:grid-cols-3">
-        <div class="reveal rounded-[2rem] border border-dashed border-white/20 bg-white/5 p-7"><p class="text-xs uppercase tracking-widest text-chalk/45">Featured comment</p><p class="mt-5 text-2xl font-black text-chalk/85">Comentario destacado pendiente</p></div>
-        <div class="reveal rounded-[2rem] border border-dashed border-white/20 bg-white/5 p-7"><p class="text-xs uppercase tracking-widest text-chalk/45">Viral screenshot</p><p class="mt-5 text-2xl font-black text-chalk/85">Captura de video pendiente</p></div>
-        <div class="reveal rounded-[2rem] border border-dashed border-white/20 bg-white/5 p-7"><p class="text-xs uppercase tracking-widest text-chalk/45">Future partners</p><p class="mt-5 text-2xl font-black text-chalk/85">Marcas futuras / testimonios</p></div>
-      </div>
-    </section>
-
-    <section id="contact" class="relative overflow-hidden bg-ink">
-      <div class="dash absolute left-0 top-0 h-2 w-full opacity-60"></div>
-      <div class="mx-auto grid max-w-7xl gap-8 px-4 py-20 sm:px-6 lg:grid-cols-[1fr_.8fr] lg:px-8">
-        <div class="reveal"><p class="text-sm font-black uppercase tracking-[.22em] text-pitch" data-i18n="contact_kicker">Contacto profesional</p><h2 class="mt-3 font-display text-6xl uppercase leading-[.86] tracking-[-.06em] text-chalk sm:text-8xl" data-i18n="contact_title">Construyamos algo con energía.</h2><p class="mt-6 max-w-2xl text-lg leading-8 text-chalk/68" data-i18n="contact_text">Para colaboraciones, patrocinios, campañas de marca, eventos, agencias, universidades o clubs. Ready to create the next move.</p></div>
-        <div class="reveal glass overflow-hidden rounded-[2rem] p-4 sm:p-5">
-          <figure class="media-card mb-4 h-72 rounded-[1.5rem]">
-            <img src="assets/ChatGPT Image 12 jun 2026, 18_11_07.png" alt="Mateu Farré in a creator and broadcasting setup" loading="lazy" />
-            <figcaption class="caption"><span class="rounded-full bg-chalk px-3 py-1 text-xs font-black uppercase tracking-widest text-ink">Creator mode</span></figcaption>
+    <!-- 8. Achievement / Competition Moments Section -->
+    <section id="achievements" class="border-t border-white/5">
+      <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+        <div class="reveal mb-12 text-center max-w-2xl mx-auto">
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch animate-pulse" data-i18n="achievements_kicker">Competitive Moments</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="achievements_title">Rendimiento y Competición Real</h2>
+          <p class="mt-4 text-sm text-steel leading-relaxed" data-i18n="achievements_desc">Mateu entrena y compite en entornos de alto nivel, reforzando la disciplina, el trabajo en equipo y la perseverancia que transmite a su audiencia.</p>
+        </div>
+        
+        <!-- Grid of competitive imagery (championships) -->
+        <div class="grid gap-5 sm:grid-cols-3">
+          <figure class="reveal media-card aspect-[4/3] rounded-2xl image-ring overflow-hidden">
+            <img src="assets/ChatGPT Image 12 jun 2026, 18_01_13.png" alt="Team celebrating championship with sign" loading="lazy" class="w-full h-full object-cover" />
+            <figcaption class="caption">
+              <span class="text-[9px] font-black uppercase tracking-widest text-pitch bg-black/60 backdrop-blur-md px-2 py-0.5 rounded" data-i18n="ach_glory">Championship Glory</span>
+            </figcaption>
           </figure>
-          <div class="space-y-3">
-            <a class="flex items-center justify-between rounded-2xl bg-chalk px-5 py-4 font-black text-ink transition hover:bg-pitch" href="mailto:mateufarremanagement@gmail.com"><span>Email management</span><span>Open</span></a>
-            <a class="flex items-center justify-between rounded-2xl border border-white/15 px-5 py-4 font-black text-chalk transition hover:border-pitch hover:text-pitch" href="tel:+376372050"><span>+376 372050</span><span>Call</span></a>
-            <a class="flex items-center justify-between rounded-2xl border border-white/15 px-5 py-4 font-black text-chalk transition hover:border-pitch hover:text-pitch" href="https://linktr.ee/mateufarre?utm_source=linktree_profile_share&ltsid=d0702022-3f75-4bb2-aa68-4daae467a21f" target="_blank" rel="noreferrer"><span>Linktree</span><span>Open</span></a>
-          </div>
-          <div class="mt-6 grid gap-3 sm:grid-cols-3">
-            <a class="rounded-2xl bg-white/5 px-4 py-4 text-center text-sm font-black uppercase tracking-widest text-chalk hover:bg-white/10" href="https://www.youtube.com/@mateufarre" target="_blank" rel="noreferrer">YouTube</a>
-            <a class="rounded-2xl bg-white/5 px-4 py-4 text-center text-sm font-black uppercase tracking-widest text-chalk hover:bg-white/10" href="https://www.instagram.com/mateufarre/" target="_blank" rel="noreferrer">Instagram</a>
-            <a class="rounded-2xl bg-white/5 px-4 py-4 text-center text-sm font-black uppercase tracking-widest text-chalk hover:bg-white/10" href="https://www.tiktok.com/@mateufarre" target="_blank" rel="noreferrer">TikTok</a>
-          </div>
+          
+          <figure class="reveal media-card aspect-[4/3] rounded-2xl image-ring overflow-hidden">
+            <img src="assets/ChatGPT Image 12 jun 2026, 18_04_45.png" alt="Championship trophy celebration with Mateu" loading="lazy" class="w-full h-full object-cover" />
+            <figcaption class="caption">
+              <span class="text-[9px] font-black uppercase tracking-widest text-pitch bg-black/60 backdrop-blur-md px-2 py-0.5 rounded" data-i18n="ach_victory">Victory Moment</span>
+            </figcaption>
+          </figure>
+          
+          <figure class="reveal media-card aspect-[4/3] rounded-2xl image-ring overflow-hidden">
+            <img src="assets/ChatGPT Image 12 jun 2026, 18_08_46.png" alt="Group champion photo with mascot" loading="lazy" class="w-full h-full object-cover" />
+            <figcaption class="caption">
+              <span class="text-[9px] font-black uppercase tracking-widest text-pitch bg-black/60 backdrop-blur-md px-2 py-0.5 rounded" data-i18n="ach_culture">Team Culture</span>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
+
+    <!-- 9. Contact Section -->
+    <section id="contact" class="relative overflow-hidden border-t border-white/5 bg-[#050505]">
+      <div class="dash absolute left-0 top-0 h-1.5 w-full opacity-30"></div>
+      
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 py-24 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+        <div class="reveal flex flex-col justify-center">
+          <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="contact_kicker">Let's collaborate</p>
+          <h2 class="mt-3 font-display section-title text-5xl uppercase leading-none tracking-tight text-white sm:text-7xl" data-i18n="contact_title">¿Trabajamos juntos?</h2>
+          <p class="mt-6 max-w-md text-sm leading-relaxed text-steel" data-i18n="contact_text">Para patrocinios, campañas, contenido UGC, eventos o activaciones de marca. Contacta directamente para evaluar propuestas.</p>
+        </div>
+        
+        <!-- Contact Cards Container -->
+        <div class="reveal glass overflow-hidden rounded-[2.5rem] p-5 border border-white/5">
+          <figure class="media-card mb-5 aspect-[3/4] rounded-[1.5rem] overflow-hidden image-ring bg-[#111]">
+            <img src="assets/ChatGPT Image 12 jun 2026, 17_56_17.png" alt="Mateu Farré in professional media session posing" loading="lazy" class="w-full h-full object-contain object-center" style="object-position: center center;" />
+            <figcaption class="caption">
+              <span class="rounded-full bg-pitch px-3.5 py-1 text-[9px] font-black uppercase tracking-widest text-ink">MF1 Media</span>
+            </figcaption>
+          </figure>
+          
+          <div class="space-y-3">
+            <a class="flex items-center justify-between rounded-2xl bg-pitch px-6 py-4.5 font-black text-ink transition duration-300 hover:bg-chalk text-xs uppercase tracking-wider" href="mailto:mateufarremanagement@gmail.com">
+              <span>mateufarremanagement@gmail.com</span>
+              <span class="text-[9px] font-black tracking-widest bg-ink/10 px-2 py-1 rounded" data-i18n="lbl_email">Email</span>
+            </a>
+            <a class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4.5 font-bold text-chalk transition duration-300 hover:border-pitch hover:text-pitch text-xs uppercase tracking-wider" href="tel:+376372050">
+              <span>+376 372050</span>
+              <span class="text-[9px] font-black tracking-widest bg-white/10 px-2 py-1 rounded" data-i18n="lbl_call">Call</span>
+            </a>
+            <a class="flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-6 py-4.5 font-bold text-chalk transition duration-300 hover:border-pitch hover:text-pitch text-xs uppercase tracking-wider" href="https://linktr.ee/mateufarre?utm_source=linktree_profile_share&ltsid=d0702022-3f75-4bb2-aa68-4daae467a21f" target="_blank" rel="noreferrer">
+              <span>Linktree</span>
+              <span class="text-[9px] font-black tracking-widest bg-white/10 px-2 py-1 rounded" data-i18n="lbl_open">Open</span>
+            </a>
+          </div>
+          
+          <!-- Social Badges -->
+          <div class="mt-6 grid gap-2.5 grid-cols-3">
+            <a class="rounded-xl border border-white/5 bg-[#0c0c0c] py-3 text-center text-[10px] font-bold uppercase tracking-wider text-chalk hover:bg-white/5 transition duration-200" href="https://www.youtube.com/@mateufarre" target="_blank" rel="noreferrer">YouTube</a>
+            <a class="rounded-xl border border-white/5 bg-[#0c0c0c] py-3 text-center text-[10px] font-bold uppercase tracking-wider text-chalk hover:bg-white/5 transition duration-200" href="https://www.instagram.com/mateufarre/" target="_blank" rel="noreferrer">Instagram</a>
+            <a class="rounded-xl border border-white/5 bg-[#0c0c0c] py-3 text-center text-[10px] font-bold uppercase tracking-wider text-chalk hover:bg-white/5 transition duration-200" href="https://www.tiktok.com/@mateufarre" target="_blank" rel="noreferrer">TikTok</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Copyright -->
+      <div class="mx-auto max-w-7xl px-4 py-8 border-t border-white/5 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[10px] text-steel" data-i18n="footer_copy">© 2026 Mateu Farré MF1. All rights reserved.</p>
+        <p class="text-[10px] text-steel" data-i18n="footer_desc">Designed as a Premium Commercial Media Kit.</p>
+      </div>
+    </section>
+
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
