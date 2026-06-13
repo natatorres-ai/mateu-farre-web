@@ -281,10 +281,6 @@ function mountCards(lang) {
           <h3 class="text-base font-bold uppercase tracking-tight text-pitch mb-2">${item.title}</h3>
           <p class="text-xs text-steel leading-relaxed">${item.desc}</p>
         </div>
-        <div class="mt-4 flex items-center gap-1.5 text-[10px] font-black uppercase tracking-widest text-chalk/40">
-          <span>${lang === 'es' ? 'Activación' : 'Activation'}</span>
-          <svg class="w-3 h-3 text-pitch" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
-        </div>
       </article>
     `).join('');
   }
