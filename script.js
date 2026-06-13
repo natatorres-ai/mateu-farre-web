@@ -2,15 +2,14 @@ const DATA = {
   es: {
     nav_impact: 'Métricas',
     nav_why: 'Por qué Mateu',
-    nav_featured: 'Formatos',
-    nav_brands: 'Oportunidades',
+    nav_featured: 'Contenido',
+    nav_brands: 'Colaboraciones',
     nav_contact: 'Contacto',
     hero_tag: 'Media Kit Oficial',
     hero_claim: 'Fútbol, contenido y ambición.',
     hero_sub: 'Creador de contenido deportivo que mezcla fútbol, vida universitaria en Estados Unidos, humor y disciplina para conectar con una comunidad joven e internacional.',
     cta_content: 'Ver métricas',
-    cta_collab: 'Oportunidades',
-    cta_contact: 'Contactar',
+    cta_collab: 'Colaboraciones',
     hero_visual: 'De la portería a la pantalla.',
     metrics_kicker: 'Metrics Snapshot',
     metrics_title: 'Comunidad conectada',
@@ -23,13 +22,11 @@ const DATA = {
     about_text_2: 'Con una base de seguidores que supera los 180,000 en múltiples plataformas, conecta de manera orgánica con jóvenes de España, Latinoamérica e internacionalmente. Su propuesta de valor para las marcas radica en esta autenticidad: una mezcla de alto impacto visual, pasión deportiva y estilo de vida estudiantil en EE.UU.',
     why_kicker: 'Why Brands Care',
     why_title: 'El valor diferencial de MF1',
-    featured_kicker: 'Best Performing Content',
-    featured_title: 'Formatos listos para tu marca',
-    featured_intro: 'Formatos seleccionados listos para ser actualizados con datos de rendimiento verificado.',
-    collab_kicker: 'Collaboration Opportunities',
-    collab_title: 'Formatos de colaboración',
-    gallery_kicker: 'Visual Story',
-    gallery_title: 'Fútbol, USA y Vida de Creador',
+    featured_kicker: 'Creative Territories',
+    featured_title: 'PILARES DE CONTENIDO',
+    featured_intro: 'Territorios creativos que mezclan fútbol, vida universitaria, humor y narrativa personal para conectar con una audiencia joven.',
+    collab_kicker: 'Collaborations',
+    collab_title: 'COLABORACIONES',
     achievements_kicker: 'Competitive Moments',
     achievements_title: 'Rendimiento y Competición Real',
     achievements_desc: 'Mateu entrena y compite en entornos de alto nivel, reforzando la disciplina, el trabajo en equipo y la perseverancia que transmite a su audiencia.',
@@ -43,8 +40,6 @@ const DATA = {
     cat_nutrition: 'Nutrición Deportiva',
     cat_education: 'Educación & Universidades',
     cat_travel: 'Viajes & Estilo de Vida',
-    send_email: 'Enviar Email',
-    view_contact: 'Ver Contacto',
     ach_glory: 'Gloria del Campeonato',
     ach_victory: 'Momento de Victoria',
     ach_culture: 'Cultura de Equipo',
@@ -57,15 +52,14 @@ const DATA = {
   en: {
     nav_impact: 'Metrics',
     nav_why: 'Why Mateu',
-    nav_featured: 'Formats',
-    nav_brands: 'Opportunities',
+    nav_featured: 'Content',
+    nav_brands: 'Collaborations',
     nav_contact: 'Contact',
     hero_tag: 'Official Media Kit',
     hero_claim: 'Football. Content. Ambition.',
     hero_sub: 'Sports content creator mixing football, U.S. college life, humor, and discipline to connect with a young and international community.',
     cta_content: 'See metrics',
-    cta_collab: 'Opportunities',
-    cta_contact: 'Get in touch',
+    cta_collab: 'Collaborations',
     hero_visual: 'From the pitch to the screen.',
     metrics_kicker: 'Metrics Snapshot',
     metrics_title: 'Connected Community',
@@ -78,13 +72,11 @@ const DATA = {
     about_text_2: 'With a combined audience exceeding 180,000 across platforms, he connects organically with young sports fans in Spain, Latin America, and globally. His value proposition for brands lies in this authenticity: a blend of high visual impact, athletic passion, and U.S. student-athlete lifestyle.',
     why_kicker: 'Why Brands Care',
     why_title: 'The MF1 Commercial Advantage',
-    featured_intro: 'Selected formats ready to be updated with verified performance data.',
-    featured_kicker: 'Best Performing Content',
-    featured_title: 'Formats ready for your brand',
-    collab_kicker: 'Collaboration Opportunities',
-    collab_title: 'Collaboration Formats',
-    gallery_kicker: 'Visual Story',
-    gallery_title: 'Football, USA & Creator Life',
+    featured_intro: 'Creative territories blending football, college life, humor and personal storytelling to connect with a young audience.',
+    featured_kicker: 'Creative Territories',
+    featured_title: 'CONTENT PILLARS',
+    collab_kicker: 'Collaborations',
+    collab_title: 'COLLABORATIONS',
     achievements_kicker: 'Competitive Moments',
     achievements_title: 'Real Athletic Competition',
     achievements_desc: 'Mateu trains and competes in high-level college environments, reinforcing the values, character, and discipline behind his content.',
@@ -98,8 +90,6 @@ const DATA = {
     cat_nutrition: 'Sports Nutrition',
     cat_education: 'Education & Universities',
     cat_travel: 'Travel & Lifestyle',
-    send_email: 'Send Email',
-    view_contact: 'View Contact',
     ach_glory: 'Championship Glory',
     ach_victory: 'Victory Moment',
     ach_culture: 'Team Culture',
@@ -115,19 +105,13 @@ const img = {
   heroGoalkeeper: 'assets/ChatGPT Image 12 jun 2026, 17_54_03.png',
   aboutTeam: 'assets/ChatGPT Image 12 jun 2026, 17_50_13.png',
   collabDive: 'assets/ChatGPT Image 12 jun 2026, 17_48_21.png',
-  contactMedia: 'assets/ChatGPT Image 12 jun 2026, 17_56_17.png',
+  contactMedia: 'assets/mateu_contacte.png',
   
   // Featured cards (unique)
   featOrange: 'assets/ChatGPT Image 12 jun 2026, 17_58_47.png',
   featRedControl: 'assets/ChatGPT Image 12 jun 2026, 17_46_56.png',
   featBlueCeleb: 'assets/ChatGPT Image 12 jun 2026, 17_55_12.png',
   featBroadcastCrew: 'assets/ChatGPT Image 12 jun 2026, 18_11_09.png',
-
-  // Gallery cards (unique)
-  galNightField: 'assets/ChatGPT Image 12 jun 2026, 17_52_21.png',
-  galAirDuel: 'assets/ChatGPT Image 12 jun 2026, 18_04_58.png',
-  galCabin: 'assets/ChatGPT Image 12 jun 2026, 18_11_07.png',
-  galTeamPose: 'assets/ChatGPT Image 12 jun 2026, 17_59_44.png',
 
   // Achievements (unique)
   achChampions: 'assets/ChatGPT Image 12 jun 2026, 18_01_13.png',
@@ -153,62 +137,66 @@ const valueCards = {
 const featuredCards = {
   es: [
     {
-      platform: 'TIKTOK / REELS',
-      title: 'Retos de Fútbol y Portería',
-      desc: 'Pruebas de puntería, penaltis y desafíos dinámicos en el campo con alta interacción.',
-      value: 'Ideal para integración orgánica de productos deportivos (calzado, guantes, balones).',
+      tag: 'Campo',
+      title: 'Retos de fútbol y portería',
+      desc: 'Pruebas de puntería, penaltis, reflejos, desafíos en campo y contenido competitivo de alto ritmo.',
       img: img.featOrange
     },
     {
-      platform: 'YOUTUBE / SHORTS',
-      title: 'Vlogs de la Vida en USA',
-      desc: 'El día a día en un campus americano, rutinas de entrenamiento, viajes y vida estudiantil.',
-      value: 'Territorio de marca perfecto para tecnología, viajes, ropa casual y plataformas educativas.',
+      tag: 'USA',
+      title: 'Vida universitaria en USA',
+      desc: 'Campus, entrenamientos, viajes, rutinas y experiencia real como estudiante-deportista en Estados Unidos.',
       img: img.featRedControl
     },
     {
-      platform: 'INSTAGRAM / TIKTOK',
-      title: 'Humor y Comedia Deportiva',
-      desc: 'Tendencias, humor cotidiano y situaciones típicas de vestuario o de la vida de estudiante.',
-      value: 'Altas tasas de compartido y viralidad rápida. Ideal para activaciones de lifestyle.',
+      tag: 'Humor',
+      title: 'Humor deportivo',
+      desc: 'Situaciones de vestuario, fútbol amateur, porteros, estudiantes y momentos reconocibles para una audiencia joven.',
       img: img.featBlueCeleb
     },
     {
-      platform: 'UGC / BRAND VIDEOS',
-      title: 'Storytelling y Tutoriales',
-      desc: 'Vídeos explicativos sobre técnica de porteros, consejos de estudio en el extranjero y rutinas.',
-      value: 'Genera autoridad y confianza. Ideal para campañas de UGC (User Generated Content) y reviews.',
+      tag: 'Historia',
+      title: 'Storytelling personal',
+      desc: 'Historias sobre adaptación, disciplina, ambición, errores, aprendizajes y crecimiento dentro y fuera del campo.',
       img: img.featBroadcastCrew
+    },
+    {
+      tag: 'Lifestyle',
+      title: 'Lifestyle joven',
+      desc: 'Moda, tecnología, viajes, comida, amigos, rutinas y momentos cotidianos con un tono natural y cercano.',
+      img: img.contactMedia
     }
   ],
   en: [
     {
-      platform: 'TIKTOK / REELS',
+      tag: 'Pitch',
       title: 'Football & Goalkeeper Challenges',
-      desc: 'Accuracy tests, penalty shootouts, and dynamic on-pitch challenges with high engagement.',
-      value: 'Ideal for organic product integration (boots, goalkeeper gloves, footballs).',
+      desc: 'Accuracy tests, penalties, reflexes, on-field challenges and fast-paced competitive content.',
       img: img.featOrange
     },
     {
-      platform: 'YOUTUBE / SHORTS',
-      title: 'USA Campus Life Vlogs',
-      desc: 'Daily routine at an American campus, training schedules, travel vlogs, and student lifestyle.',
-      value: 'Perfect brand territory for technology, travel, casual streetwear, and education platforms.',
+      tag: 'USA',
+      title: 'USA College Life',
+      desc: 'Campus life, training sessions, trips, routines and the real experience of a student-athlete in the United States.',
       img: img.featRedControl
     },
     {
-      platform: 'INSTAGRAM / TIKTOK',
-      title: 'Sports Humor & Relatability',
-      desc: 'Trending topics, student-athlete memes, locker room situations, and daily athlete humor.',
-      value: 'High share rates and quick viral potential. Excellent for lifestyle activations.',
+      tag: 'Humor',
+      title: 'Sports Humor',
+      desc: 'Locker room moments, amateur football, goalkeepers, student life and relatable situations for a young audience.',
       img: img.featBlueCeleb
     },
     {
-      platform: 'UGC / BRAND VIDEOS',
-      title: 'Storytelling & Educational Tutorials',
-      desc: 'Goalkeeper training techniques, study abroad guides, tips, and personal growth talks.',
-      value: 'Establishes authority and trust. Perfect for UGC (User Generated Content) and reviews.',
+      tag: 'Story',
+      title: 'Personal Storytelling',
+      desc: 'Stories about adaptation, discipline, ambition, mistakes, lessons and growth on and off the pitch.',
       img: img.featBroadcastCrew
+    },
+    {
+      tag: 'Lifestyle',
+      title: 'Youth Lifestyle',
+      desc: 'Fashion, tech, travel, food, friends, routines and everyday moments with a natural and relatable tone.',
+      img: img.contactMedia
     }
   ]
 };
@@ -232,18 +220,10 @@ const collabCards = {
   ]
 };
 
-const gallery = [
-  ['USA College Football', img.galNightField, 'Mateu on a football field at night under the scoreboard'],
-  ['Competitive Intensity', img.galAirDuel, 'Intense aerial soccer duel action'],
-  ['Creator Setup', img.galCabin, 'Mateu in a creator and broadcasting setup with microphones and cameras'],
-  ['Team Atmosphere', img.galTeamPose, 'Mateu posing with his teammates in uniform']
-];
-
 function mountCards(lang) {
   const whyGrid = document.getElementById('whyGrid');
   const featuredGrid = document.getElementById('featuredGrid');
   const collabGrid = document.getElementById('collabGrid');
-  const galleryGrid = document.getElementById('galleryGrid');
 
   if (whyGrid) {
     whyGrid.innerHTML = valueCards[lang].map((item, i) => `
@@ -262,13 +242,9 @@ function mountCards(lang) {
           <img src="${item.img}" alt="${item.title}" class="object-cover object-top" loading="lazy" />
         </figure>
         <div class="p-6 flex flex-col flex-grow">
-          <span class="inline-block self-start text-[10px] font-black uppercase tracking-wider text-pitch bg-pitch/10 px-2.5 py-1 rounded-full mb-3">${item.platform}</span>
+          <span class="inline-block self-start text-[10px] font-black uppercase tracking-wider text-pitch bg-pitch/10 px-2.5 py-1 rounded-full mb-3">${item.tag}</span>
           <h3 class="text-lg font-bold uppercase tracking-tight text-white">${item.title}</h3>
           <p class="mt-2 text-sm text-chalk/70 leading-relaxed">${item.desc}</p>
-          <div class="mt-4 pt-4 border-t border-white/5 text-[11px] leading-relaxed text-steel">
-            <span class="font-semibold text-chalk/80 block mb-1">${lang === 'es' ? 'Valor de Marca:' : 'Brand Fit:'}</span>
-            ${item.value}
-          </div>
         </div>
       </article>
     `).join('');
@@ -285,17 +261,6 @@ function mountCards(lang) {
     `).join('');
   }
 
-  if (galleryGrid) {
-    galleryGrid.innerHTML = gallery.map(item => `
-      <figure class="reveal media-card min-h-[18rem] md:min-h-[22rem] rounded-[1.5rem] bg-ink image-ring">
-        <img src="${item[1]}" alt="${item[2]}" loading="lazy" />
-        <figcaption class="caption">
-          <span class="text-[9px] font-black uppercase tracking-[.25em] text-pitch bg-black/60 backdrop-blur-md px-2 py-1 rounded">MF1 visual</span>
-          <p class="mt-2 text-xl font-bold uppercase tracking-tight text-chalk text-shadow">${item[0]}</p>
-        </figcaption>
-      </figure>
-    `).join('');
-  }
 }
 
 function setLang(lang) {
