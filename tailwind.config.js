@@ -1,9 +1,9 @@
 tailwind.config = {
       theme: {
         extend: {
-          colors: { ink: '#050505', chalk: '#f6f4ee', pitch: '#19e37d', volt: '#1f6fff', steel: '#8d98a7' },
+          colors: { ink: '#111111', chalk: '#fff7fb', pitch: '#145cff', volt: '#ff3045', steel: '#5f6673', blush: '#ffd8e8' },
           fontFamily: { display: ['Outfit', 'Impact', 'sans-serif'], body: ['Inter', 'sans-serif'] },
-          boxShadow: { glow: '0 0 60px rgba(31,111,255,.28)', pitch: '0 0 55px rgba(25,227,125,.2)' }
+          boxShadow: { glow: '0 18px 55px rgba(20,92,255,.16)', pitch: '0 0 38px rgba(20,92,255,.22)' }
         }
       }
     }

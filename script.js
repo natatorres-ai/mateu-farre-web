@@ -229,7 +229,7 @@ function mountCards(lang) {
     whyGrid.innerHTML = valueCards[lang].map((item, i) => `
       <article class="reveal brand-value-card rounded-[1.5rem] p-6">
         <span class="text-xs font-black text-pitch tracking-widest">${String(i + 1).padStart(2, '0')}</span>
-        <h3 class="mt-4 text-xl font-bold uppercase tracking-tight text-chalk">${item[0]}</h3>
+        <h3 class="mt-4 text-xl font-bold uppercase tracking-tight text-ink">${item[0]}</h3>
         <p class="mt-2 text-sm leading-relaxed text-steel">${item[1]}</p>
       </article>
     `).join('');
@@ -237,14 +237,14 @@ function mountCards(lang) {
 
   if (featuredGrid) {
     featuredGrid.innerHTML = featuredCards[lang].map(item => `
-      <article class="reveal overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-[#121212] to-[#0c0c0c] border border-white/5 text-chalk image-ring flex flex-col h-full">
+      <article class="reveal overflow-hidden rounded-[1.5rem] bg-gradient-to-b from-white to-blush/55 border border-ink/10 text-ink image-ring flex flex-col h-full">
         <figure class="media-card aspect-[4/5] w-full overflow-hidden">
           <img src="${item.img}" alt="${item.title}" class="object-cover object-top" loading="lazy" />
         </figure>
         <div class="p-6 flex flex-col flex-grow">
           <span class="inline-block self-start text-[10px] font-black uppercase tracking-wider text-pitch bg-pitch/10 px-2.5 py-1 rounded-full mb-3">${item.tag}</span>
-          <h3 class="text-lg font-bold uppercase tracking-tight text-white">${item.title}</h3>
-          <p class="mt-2 text-sm text-chalk/70 leading-relaxed">${item.desc}</p>
+          <h3 class="text-lg font-bold uppercase tracking-tight text-ink">${item.title}</h3>
+          <p class="mt-2 text-sm text-steel leading-relaxed">${item.desc}</p>
         </div>
       </article>
     `).join('');
@@ -252,7 +252,7 @@ function mountCards(lang) {
 
   if (collabGrid) {
     collabGrid.innerHTML = collabCards[lang].map(item => `
-      <article class="reveal brand-value-card rounded-2xl p-6 border border-white/5 flex flex-col justify-between h-full">
+      <article class="reveal brand-value-card rounded-2xl p-6 border border-ink/10 flex flex-col justify-between h-full">
         <div>
           <h3 class="text-base font-bold uppercase tracking-tight text-pitch mb-2">${item.title}</h3>
           <p class="text-xs text-steel leading-relaxed">${item.desc}</p>
@@ -272,7 +272,7 @@ function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(btn => {
     const active = btn.dataset.lang === lang;
     btn.classList.toggle('text-pitch', active);
-    btn.classList.toggle('text-chalk/60', !active);
+    btn.classList.toggle('text-ink/55', !active);
   });
   mountCards(lang);
   localStorage.setItem('mf1-lang', lang);

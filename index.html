@@ -16,17 +16,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="noise antialiased selection:bg-pitch selection:text-ink">
+<body class="noise antialiased selection:bg-pitch selection:text-white">
   <div class="field-lines fixed inset-0 -z-10"></div>
 
   <!-- Header Navigation -->
-  <header class="fixed inset-x-0 top-0 z-40 bg-[#050505]/80 backdrop-blur-md border-b border-white/5">
+  <header class="fixed inset-x-0 top-0 z-40 bg-white/85 backdrop-blur-md border-b border-ink/10">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
       <a href="#top" class="flex items-center gap-3.5" aria-label="Mateu Farré home">
         <span class="flex h-10 w-14 items-center justify-center rounded-xl bg-chalk p-1.5 shadow-glow">
           <img src="assets/logo mateu.png" alt="MF1 logo" class="h-full w-full object-contain logo-img" />
         </span>
-        <span class="hidden text-xs font-black uppercase tracking-[.25em] text-chalk sm:block">Mateu Farré</span>
+        <span class="hidden text-xs font-black uppercase tracking-[.25em] text-ink sm:block">Mateu Farré</span>
       </a>
       
       <!-- Nav Links -->
@@ -39,7 +39,7 @@
       </div>
       
       <!-- Language Switch -->
-      <div class="flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-full p-1">
+      <div class="flex items-center gap-1.5 bg-blush/55 border border-ink/10 rounded-full p-1">
         <button class="lang-btn rounded-full px-3 py-1 text-[10px] font-black tracking-wider transition-all duration-200" data-lang="es">ES</button>
         <button class="lang-btn rounded-full px-3 py-1 text-[10px] font-black tracking-wider transition-all duration-200" data-lang="en">EN</button>
       </div>
@@ -56,17 +56,17 @@
           <span class="h-2 w-2 rounded-full bg-pitch shadow-pitch animate-pulse"></span>
           <span data-i18n="hero_tag">Media Kit Oficial</span>
         </div>
-        <h1 class="hero-name text-chalk">
+        <h1 class="hero-name text-ink">
           <span>Mateu</span><span class="hero-last">Farré</span>
         </h1>
         <div class="mt-6 max-w-3xl border-l-4 border-pitch pl-5">
-          <p class="text-2xl font-black uppercase tracking-tight text-white sm:text-4xl" data-i18n="hero_claim">Fútbol, contenido y ambición.</p>
+          <p class="text-2xl font-black uppercase tracking-tight text-ink sm:text-4xl" data-i18n="hero_claim">Fútbol, contenido y ambición.</p>
           <p class="mt-4 text-sm leading-relaxed text-steel sm:text-base" data-i18n="hero_sub">Creador de contenido deportivo que mezcla fútbol, vida universitaria en Estados Unidos, humor y disciplina para conectar con una comunidad joven e internacional.</p>
         </div>
         
         <!-- Action Buttons -->
         <div class="mt-9 flex flex-wrap gap-4">
-          <a href="#collab" class="slant bg-pitch px-8 py-4.5 text-xs font-black uppercase tracking-[.2em] text-ink transition duration-300 hover:bg-chalk" data-i18n="cta_collab">Colaboraciones</a>
+          <a href="#collab" class="slant bg-pitch px-8 py-4.5 text-xs font-black uppercase tracking-[.2em] text-white transition duration-300 hover:bg-volt" data-i18n="cta_collab">Colaboraciones</a>
         </div>
       </div>
 
@@ -79,9 +79,9 @@
             <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/5 via-black/20 to-black/90"></div>
             <div class="relative z-10 flex items-start justify-between">
               <img src="assets/logo mateu.png" alt="MF1 logo" class="h-10 w-16 rounded-xl bg-chalk/90 object-contain p-1.5 shadow-md" />
-              <span class="rounded-full bg-[#050505] px-3.5 py-1.5 text-[9px] font-black uppercase tracking-[.2em] text-pitch border border-white/5">MF1</span>
+              <span class="rounded-full bg-white/90 px-3.5 py-1.5 text-[9px] font-black uppercase tracking-[.2em] text-pitch border border-ink/10">MF1</span>
             </div>
-            <div class="relative z-10 rounded-2xl border border-white/5 bg-black/40 p-5 backdrop-blur-md">
+            <div class="relative z-10 rounded-2xl border border-white/20 bg-black/45 p-5 backdrop-blur-md">
               <p class="text-[9px] font-black uppercase tracking-[.25em] text-pitch" data-i18n="hero_tag">Media Kit Oficial</p>
               <p class="mt-2 text-2xl font-bold uppercase leading-none tracking-tight text-white" data-i18n="hero_visual">De la portería a la pantalla.</p>
             </div>
@@ -91,7 +91,7 @@
     </section>
 
     <!-- Continuous Running Ticker Banner -->
-    <section class="overflow-hidden border-y border-white/5 bg-[#080808] py-4.5">
+    <section class="overflow-hidden border-y border-ink/10 bg-blush/70 py-4.5">
       <div class="ticker flex w-[200%] gap-10 whitespace-nowrap text-[10px] font-black uppercase tracking-[.25em] text-steel">
         <span>Football creator</span><span class="text-pitch">USA college life</span><span>Goalkeeper energy</span><span class="text-volt">Young community</span><span>Brand-ready content</span><span>Football creator</span><span class="text-pitch">USA college life</span><span>Goalkeeper energy</span><span class="text-volt">Young community</span><span>Brand-ready content</span>
       </div>
@@ -102,42 +102,42 @@
       <div class="reveal mb-10 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
           <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="metrics_kicker">Metrics Snapshot</p>
-          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="metrics_title">Comunidad conectada</h2>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-ink sm:text-5xl" data-i18n="metrics_title">Comunidad conectada</h2>
         </div>
         <p class="max-w-md text-xs leading-relaxed text-steel" data-i18n="metrics_note">Métricas públicas certificadas.</p>
       </div>
       
       <!-- Metrics Grid -->
       <div class="grid gap-5 md:grid-cols-3">
-        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-ink/10 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between">
               <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">TikTok</span>
               <svg class="h-5 w-5 text-steel/60" fill="currentColor" viewBox="0 0 24 24"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.44-4.13-1.24-.76-.5-1.42-1.15-1.92-1.92v6.62c.03 2.1-.6 4.31-2.07 5.86-1.57 1.71-4.04 2.65-6.35 2.27-2.31-.34-4.43-1.93-5.26-4.14-.98-2.5-.27-5.59 1.72-7.37 1.68-1.54 4.17-2.12 6.36-1.5v4.03c-1.12-.34-2.39-.14-3.32.55-.99.71-1.39 2.05-1.01 3.22.36 1.18 1.57 1.99 2.81 1.95 1.48-.02 2.69-1.24 2.71-2.72.03-3.08.01-6.16.02-9.24.01-.15.01-.3-.02-.45z"/></svg>
             </div>
-            <p class="mt-6 font-display text-6xl font-black text-white leading-none">155K</p>
+            <p class="mt-6 font-display text-6xl font-black text-ink leading-none">155K</p>
           </div>
           <p class="mt-4 text-xs font-medium text-steel" data-i18n="followers">seguidores</p>
         </article>
         
-        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-ink/10 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between">
               <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">Instagram</span>
               <svg class="h-5 w-5 text-steel/60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
             </div>
-            <p class="mt-6 font-display text-6xl font-black text-white leading-none">23.9K</p>
+            <p class="mt-6 font-display text-6xl font-black text-ink leading-none">23.9K</p>
           </div>
           <p class="mt-4 text-xs font-medium text-steel" data-i18n="followers">seguidores</p>
         </article>
         
-        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-white/5 flex flex-col justify-between">
+        <article class="reveal magnetic glass rounded-[1.5rem] p-8 border border-ink/10 flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between">
               <span class="text-xs font-black uppercase tracking-[.25em] text-pitch">YouTube</span>
               <svg class="h-5 w-5 text-steel/60" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.002 3.002 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </div>
-            <p class="mt-6 font-display text-6xl font-black text-white leading-none">7.11K</p>
+            <p class="mt-6 font-display text-6xl font-black text-ink leading-none">7.11K</p>
           </div>
           <p class="mt-4 text-xs font-medium text-steel" data-i18n="subs">suscriptores</p>
         </article>
@@ -145,21 +145,21 @@
     </section>
 
     <!-- 3. Who is Mateu Section -->
-    <section id="about" class="border-y border-white/5 bg-[#080808]/40">
+    <section id="about" class="border-y border-ink/10 bg-[#fff0f6]/70">
       <div class="mx-auto grid max-w-7xl gap-12 px-4 py-24 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         
         <!-- Team environment image -->
         <figure class="reveal media-card min-h-[26rem] rounded-[2rem] image-ring overflow-hidden relative">
           <img src="assets/ChatGPT Image 12 jun 2026, 17_50_13.png" alt="Mateu Farré with his teammates on the field" loading="lazy" class="w-full h-full object-cover" />
           <figcaption class="caption">
-            <span class="rounded-full bg-pitch px-3.5 py-1.5 text-[9px] font-black uppercase tracking-widest text-ink border border-pitch/30">Team Mode</span>
+            <span class="rounded-full bg-pitch px-3.5 py-1.5 text-[9px] font-black uppercase tracking-widest text-white border border-pitch/30">Team Mode</span>
           </figcaption>
         </figure>
         
         <!-- About Texts -->
         <div class="reveal flex max-w-2xl flex-col justify-center">
           <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="about_kicker">Who is Mateu</p>
-          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="about_title">Deportista de élite y creador de contenido.</h2>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-ink sm:text-5xl" data-i18n="about_title">Deportista de élite y creador de contenido.</h2>
           <div class="mt-6 space-y-4 text-sm leading-relaxed text-steel">
             <p data-i18n="about_text_1">Mateu Farré no es solo un portero compitiendo en el exigente sistema universitario de Estados Unidos; es una voz fresca e influyente que narra el deporte desde adentro. Su día a día combina la rigurosa disciplina del entrenamiento de alto rendimiento con la producción creativa de formatos dinámicos, retos y humor.</p>
             <p data-i18n="about_text_2">Con una base de seguidores que supera los 180,000 en múltiples plataformas, conecta de manera orgánica con jóvenes de España, Latinoamérica e internacionalmente. Su propuesta de valor para las marcas radica en esta autenticidad: una mezcla de alto impacto visual, pasión deportiva y estilo de vida estudiantil en EE.UU.</p>
@@ -172,53 +172,53 @@
     <section id="why" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
       <div class="reveal mb-12 max-w-3xl">
         <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="why_kicker">Why Brands Care</p>
-        <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="why_title">El valor diferencial de MF1</h2>
+        <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-ink sm:text-5xl" data-i18n="why_title">El valor diferencial de MF1</h2>
       </div>
       
       <!-- Dynamically filled by script.js -->
       <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4" id="whyGrid"></div>
       
       <!-- Category tags -->
-      <div class="reveal mt-12 overflow-hidden rounded-[2rem] border border-white/8 bg-gradient-to-br from-white/[.07] via-[#0b0b0b] to-pitch/10 p-5 shadow-glow sm:p-7">
+      <div class="reveal mt-12 overflow-hidden rounded-[2rem] border border-ink/10 bg-gradient-to-br from-white via-blush/60 to-pitch/10 p-5 shadow-glow sm:p-7">
         <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <p class="text-[10px] font-black uppercase tracking-[.25em] text-pitch" data-i18n="target_categories">Categorías de Marcas Objetivo:</p>
-          <div class="h-px flex-1 bg-gradient-to-r from-pitch/40 via-white/10 to-transparent sm:mb-2"></div>
+          <div class="h-px flex-1 bg-gradient-to-r from-pitch/40 via-ink/10 to-transparent sm:mb-2"></div>
         </div>
         <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">01</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_sports_gear">Equipación Deportiva</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_sports_gear">Equipación Deportiva</span>
           </span>
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">02</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_streetwear">Moda Streetwear / Casual</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_streetwear">Moda Streetwear / Casual</span>
           </span>
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">03</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_tech">Tecnología & Gadgets</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_tech">Tecnología & Gadgets</span>
           </span>
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">04</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_nutrition">Nutrición Deportiva</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_nutrition">Nutrición Deportiva</span>
           </span>
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">05</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_education">Educación & Universidades</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_education">Educación & Universidades</span>
           </span>
-          <span class="group flex items-center gap-4 rounded-2xl border border-white/8 bg-black/30 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
+          <span class="group flex items-center gap-4 rounded-2xl border border-ink/10 bg-white/75 p-4 transition duration-300 hover:border-pitch/70 hover:bg-pitch/10">
             <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border border-pitch/30 bg-pitch/10 text-xs font-black text-pitch">06</span>
-            <span class="text-xs font-black uppercase tracking-wider text-chalk" data-i18n="cat_travel">Viajes & Estilo de Vida</span>
+            <span class="text-xs font-black uppercase tracking-wider text-ink" data-i18n="cat_travel">Viajes & Estilo de Vida</span>
           </span>
         </div>
       </div>
     </section>
 
     <!-- 5. Content Pillars Section -->
-    <section id="featured" class="border-t border-white/5 bg-[#080808]/40">
+    <section id="featured" class="border-t border-ink/10 bg-[#fff0f6]/70">
       <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div class="reveal mb-12 max-w-3xl">
           <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="featured_kicker">Creative Territories</p>
-          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="featured_title">PILARES DE CONTENIDO</h2>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-ink sm:text-5xl" data-i18n="featured_title">PILARES DE CONTENIDO</h2>
           <p class="mt-4 text-sm text-steel leading-relaxed" data-i18n="featured_intro">Territorios creativos que mezclan fútbol, vida universitaria, humor y narrativa personal para conectar con una audiencia joven.</p>
         </div>
         
@@ -229,7 +229,7 @@
 
     <!-- 6. Collaborations Section -->
     <section id="collab" class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-      <div class="reveal overflow-hidden rounded-[2.5rem] border border-white/5 bg-[#0a0a0a] shadow-glow md:grid md:grid-cols-[0.95fr_1.05fr]">
+      <div class="reveal overflow-hidden rounded-[2.5rem] border border-ink/10 bg-white/80 shadow-glow md:grid md:grid-cols-[0.95fr_1.05fr]">
         
         <!-- Dive action image -->
         <figure class="media-card min-h-[24rem] w-full h-full relative md:min-h-[34rem]">
@@ -240,7 +240,7 @@
         <div class="p-8 sm:p-12 lg:p-14 flex flex-col justify-between">
           <div>
             <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="collab_kicker">Collaborations</p>
-            <h2 class="mt-3 font-display section-title text-4xl uppercase leading-none tracking-tight text-white sm:text-5xl" data-i18n="collab_title">COLABORACIONES</h2>
+            <h2 class="mt-3 font-display section-title text-4xl uppercase leading-none tracking-tight text-ink sm:text-5xl" data-i18n="collab_title">COLABORACIONES</h2>
             
             <!-- Packages container dynamically filled by script.js -->
             <div class="mt-8 grid gap-4 sm:grid-cols-2" id="collabGrid"></div>
@@ -251,11 +251,11 @@
     </section>
 
     <!-- 7. Achievement / Competition Moments Section -->
-    <section id="achievements" class="border-t border-white/5">
+    <section id="achievements" class="border-t border-ink/10">
       <div class="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div class="reveal mb-12 text-center max-w-2xl mx-auto">
           <p class="text-xs font-black uppercase tracking-[.25em] text-pitch animate-pulse" data-i18n="achievements_kicker">Competitive Moments</p>
-          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-white sm:text-5xl" data-i18n="achievements_title">Rendimiento y Competición Real</h2>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase tracking-tight text-ink sm:text-5xl" data-i18n="achievements_title">Rendimiento y Competición Real</h2>
           <p class="mt-4 text-sm text-steel leading-relaxed" data-i18n="achievements_desc">Mateu entrena y compite en entornos de alto nivel, reforzando la disciplina, el trabajo en equipo y la perseverancia que transmite a su audiencia.</p>
         </div>
         
@@ -286,36 +286,36 @@
     </section>
 
     <!-- 9. Contact Section -->
-    <section id="contact" class="relative overflow-hidden border-t border-white/5 bg-[#050505]">
+    <section id="contact" class="relative overflow-hidden border-t border-ink/10 bg-[#fff0f6]/80">
       <div class="dash absolute left-0 top-0 h-1.5 w-full opacity-30"></div>
       
       <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-8">
         <div class="reveal flex flex-col justify-center">
           <p class="text-xs font-black uppercase tracking-[.25em] text-pitch" data-i18n="contact_kicker">Let's collaborate</p>
-          <h2 class="mt-3 font-display section-title text-4xl uppercase leading-none tracking-tight text-white sm:text-6xl" data-i18n="contact_title">¿Trabajamos juntos?</h2>
-          <p class="mt-5 max-w-xl text-base leading-relaxed text-chalk/72" data-i18n="contact_text">Para patrocinios, campañas, contenido UGC, eventos o activaciones de marca. Contacta directamente para evaluar propuestas.</p>
+          <h2 class="mt-3 font-display section-title text-4xl uppercase leading-none tracking-tight text-ink sm:text-6xl" data-i18n="contact_title">¿Trabajamos juntos?</h2>
+          <p class="mt-5 max-w-xl text-base leading-relaxed text-steel" data-i18n="contact_text">Para patrocinios, campañas, contenido UGC, eventos o activaciones de marca. Contacta directamente para evaluar propuestas.</p>
         </div>
         
         <!-- Contact Cards Container -->
-        <div class="reveal glass overflow-hidden rounded-[2rem] border border-white/8 p-4 sm:p-5">
-          <figure class="media-card mb-5 h-72 rounded-[1.25rem] overflow-hidden image-ring bg-[#111] sm:h-80 lg:h-96">
+        <div class="reveal glass overflow-hidden rounded-[2rem] border border-ink/10 p-4 sm:p-5">
+          <figure class="media-card mb-5 h-72 rounded-[1.25rem] overflow-hidden image-ring bg-blush sm:h-80 lg:h-96">
             <img src="assets/mateu_contacte.png" alt="Mateu Farré formal portrait for professional contact" loading="lazy" class="w-full h-full object-cover object-[50%_18%]" />
             <figcaption class="caption">
-              <span class="rounded-full bg-pitch px-3.5 py-1 text-[9px] font-black uppercase tracking-widest text-ink">MF1 Media</span>
+              <span class="rounded-full bg-pitch px-3.5 py-1 text-[9px] font-black uppercase tracking-widest text-white">MF1 Media</span>
             </figcaption>
           </figure>
           
           <div class="grid gap-3">
-            <a class="rounded-2xl bg-pitch px-5 py-5 font-black text-ink transition duration-300 hover:bg-chalk" href="mailto:mateufarremanagement@gmail.com">
-              <span class="block text-[10px] uppercase tracking-[.22em] text-ink/65" data-i18n="lbl_email">Email</span>
+            <a class="rounded-2xl bg-pitch px-5 py-5 font-black text-white transition duration-300 hover:bg-volt" href="mailto:mateufarremanagement@gmail.com">
+              <span class="block text-[10px] uppercase tracking-[.22em] text-white/75" data-i18n="lbl_email">Email</span>
               <span class="mt-1 block break-all text-base tracking-tight sm:text-xl">mateufarremanagement@gmail.com</span>
             </a>
             <div class="grid gap-3 sm:grid-cols-2">
-              <a class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 font-bold text-chalk transition duration-300 hover:border-pitch hover:text-pitch" href="tel:+376372050">
+              <a class="rounded-2xl border border-ink/10 bg-white/80 px-5 py-4 font-bold text-ink transition duration-300 hover:border-pitch hover:text-pitch" href="tel:+376372050">
                 <span class="block text-[10px] uppercase tracking-[.22em] text-steel" data-i18n="lbl_call">Call</span>
                 <span class="mt-1 block text-xl tracking-tight">+376 372050</span>
               </a>
-              <a class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 font-bold text-chalk transition duration-300 hover:border-pitch hover:text-pitch" href="https://linktr.ee/mateufarre?utm_source=linktree_profile_share&ltsid=d0702022-3f75-4bb2-aa68-4daae467a21f" target="_blank" rel="noreferrer">
+              <a class="rounded-2xl border border-ink/10 bg-white/80 px-5 py-4 font-bold text-ink transition duration-300 hover:border-pitch hover:text-pitch" href="https://linktr.ee/mateufarre?utm_source=linktree_profile_share&ltsid=d0702022-3f75-4bb2-aa68-4daae467a21f" target="_blank" rel="noreferrer">
                 <span class="block text-[10px] uppercase tracking-[.22em] text-steel" data-i18n="lbl_open">Open</span>
                 <span class="mt-1 block text-xl tracking-tight">Linktree</span>
               </a>
@@ -324,15 +324,15 @@
           
           <!-- Social Badges -->
           <div class="mt-5 grid grid-cols-3 gap-3">
-            <a class="flex items-center justify-center gap-2 rounded-xl border border-white/5 bg-[#0c0c0c] py-4 text-center text-xs font-bold uppercase tracking-wider text-chalk transition duration-200 hover:border-pitch hover:bg-white/5 hover:text-pitch" href="https://www.youtube.com/@mateufarre" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on YouTube">
+            <a class="flex items-center justify-center gap-2 rounded-xl border border-ink/10 bg-white/80 py-4 text-center text-xs font-bold uppercase tracking-wider text-ink transition duration-200 hover:border-pitch hover:bg-pitch/10 hover:text-pitch" href="https://www.youtube.com/@mateufarre" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on YouTube">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.517 3.545 12 3.545 12 3.545s-7.517 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.871.508 9.388.508 9.388.508s7.517 0 9.388-.508a3.002 3.002 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
               <span>YouTube</span>
             </a>
-            <a class="flex items-center justify-center gap-2 rounded-xl border border-white/5 bg-[#0c0c0c] py-4 text-center text-xs font-bold uppercase tracking-wider text-chalk transition duration-200 hover:border-pitch hover:bg-white/5 hover:text-pitch" href="https://www.instagram.com/mateufarre/" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on Instagram">
+            <a class="flex items-center justify-center gap-2 rounded-xl border border-ink/10 bg-white/80 py-4 text-center text-xs font-bold uppercase tracking-wider text-ink transition duration-200 hover:border-pitch hover:bg-pitch/10 hover:text-pitch" href="https://www.instagram.com/mateufarre/" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on Instagram">
               <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
               <span>Instagram</span>
             </a>
-            <a class="flex items-center justify-center gap-2 rounded-xl border border-white/5 bg-[#0c0c0c] py-4 text-center text-xs font-bold uppercase tracking-wider text-chalk transition duration-200 hover:border-pitch hover:bg-white/5 hover:text-pitch" href="https://www.tiktok.com/@mateufarre" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on TikTok">
+            <a class="flex items-center justify-center gap-2 rounded-xl border border-ink/10 bg-white/80 py-4 text-center text-xs font-bold uppercase tracking-wider text-ink transition duration-200 hover:border-pitch hover:bg-pitch/10 hover:text-pitch" href="https://www.tiktok.com/@mateufarre" target="_blank" rel="noreferrer" aria-label="Open Mateu Farré on TikTok">
               <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.06-2.89-.44-4.13-1.24-.76-.5-1.42-1.15-1.92-1.92v6.62c.03 2.1-.6 4.31-2.07 5.86-1.57 1.71-4.04 2.65-6.35 2.27-2.31-.34-4.43-1.93-5.26-4.14-.98-2.5-.27-5.59 1.72-7.37 1.68-1.54 4.17-2.12 6.36-1.5v4.03c-1.12-.34-2.39-.14-3.32.55-.99.71-1.39 2.05-1.01 3.22.36 1.18 1.57 1.99 2.81 1.95 1.48-.02 2.69-1.24 2.71-2.72.03-3.08.01-6.16.02-9.24.01-.15.01-.3-.02-.45z"/></svg>
               <span>TikTok</span>
             </a>
@@ -341,7 +341,7 @@
       </div>
       
       <!-- Footer Copyright -->
-      <div class="mx-auto max-w-7xl px-4 py-8 border-t border-white/5 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="mx-auto max-w-7xl px-4 py-8 border-t border-ink/10 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-[10px] text-steel" data-i18n="footer_copy">© 2026 Mateu Farré MF1. All rights reserved.</p>
         <p class="text-[10px] text-steel" data-i18n="footer_desc">Designed as a Premium Commercial Media Kit.</p>
       </div>
